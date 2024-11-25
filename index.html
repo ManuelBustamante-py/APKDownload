@@ -68,7 +68,9 @@
                 <div class="flex flex-col items-center md:items-start">
                     <div id="qrcode"></div>
                     <p class="text-primary-yellow mt-4 mb-6">Escanea el código QR para descargar la aplicación</p>
-                    <a href="assets/app/registrapp.apk" download class="download-btn">
+                    <a href="https://github.com/ManuelBustamante-py/APKDownload/releases/download/Apk/registrapp.apk" 
+                       download 
+                       class="download-btn">
                         Descargar RegistrApp
                     </a>
                 </div>
@@ -110,7 +112,9 @@
             </p>
             <div class="flex flex-col items-center">
                 <div id="qrcode2" class="mb-4"></div>
-                <a href="assets/app/registrapp.apk" download class="download-btn mb-6">
+                <a href="https://github.com/ManuelBustamante-py/APKDownload/releases/download/Apk/registrapp.apk" 
+                   download 
+                   class="download-btn mb-6">
                     Descargar RegistrApp
                 </a>
                 <p class="mt-4 text-sm text-gray-600">Versión 1.0.0 | Android 6.0 o superior</p>
@@ -130,12 +134,11 @@
     </footer>
 
     <script>
-        // URL de descarga de tu APK
-        const downloadUrl = 'assets/app/registrapp.apk';
+        const downloadUrl = 'https://github.com/ManuelBustamante-py/APKDownload/releases/download/Apk/registrapp.apk';
         
-        // Crear el código QR en la sección hero
+        // Crear código QR en la sección hero
         new QRCode(document.getElementById("qrcode"), {
-            text: window.location.origin + '/' + downloadUrl,
+            text: downloadUrl,
             width: 200,
             height: 200,
             colorDark : "#282C5A",
@@ -143,9 +146,9 @@
             correctLevel : QRCode.CorrectLevel.H
         });
 
-        // Crear el código QR en la sección de descarga
+        // Crear código QR en la sección de descarga
         new QRCode(document.getElementById("qrcode2"), {
-            text: window.location.origin + '/' + downloadUrl,
+            text: downloadUrl,
             width: 200,
             height: 200,
             colorDark : "#282C5A",
